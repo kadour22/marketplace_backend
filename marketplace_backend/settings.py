@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'User'
 ]
 
 MIDDLEWARE = [
@@ -112,3 +113,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 openai_api_key = os.getenv('openai_api_key')
+
+AUTH_USER_MODEL = 'User.User'
